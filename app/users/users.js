@@ -1,14 +1,22 @@
 'use strict';
 
-angular.module('rantly.users', ['ngRoute'])
+var users = angular.module('rantly.users', ['ngRoute']);
 
-.config(['$routeProvider', function($routeProvider) {
+users.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/users', {
     templateUrl: 'users/users.html',
     controller: 'UsersCtrl'
+  }).
+  when('/signup', {
+    templateURL: 'users/signup.html',
+    controller: 'SignUpCtrl'
   });
-}])
+}]);
 
-.controller('UsersCtrl', [function() {
+users.controller('UsersCtrl', [function() {
+
+}]);
+
+users.controller('SignUpCtrl', [function() {
 
 }]);

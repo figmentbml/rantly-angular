@@ -5,6 +5,7 @@ angular.module('rantly', [
   'ngRoute',
   'rantly.rants',
   'rantly.users',
+  'rantly.signup',
   'rantly.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
