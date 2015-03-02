@@ -11,16 +11,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Laila:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Hind:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/rants">Rants</a></li>
-    <li><a href="#/users">Users</a></li>
-  </ul>
+  <nav>
+    <header class="logo">
+      <a href="/rants">Rantly</a>
+    </header>
+    <header class="rantly">
+      <a href="#/rants">Rants</a>
+      <a href="#/users">Users</a>
+    </header>
+  </nav>
 
-  <div ng-view></div>
+  <div class="wrapper">
+    <aside>
+      <header class="main">
+        Search
+      </header>
+      <section class="log-in">
+        <input type="text" placeholder="Your email">
+      </section>
+    </aside>
+
+    <section class="content">
+      <header class="main">
+        <button class="button-invert button">New Rant</button>
+      </header>
+      <div ng-view></div>
+    </section>
+  </div>
+
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
