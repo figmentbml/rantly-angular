@@ -1,1 +1,15 @@
-<p>This is the partial for Rants.</p>
+<div ng-repeat="rant in rants" class="rant-box">
+  <header class="rant-header">
+    <h3 class="rant-title">{{rant.title}}</h3>
+    <div class="rant-action">
+      <button class="button">Edit</button>
+    </div>
+  </header>
+  <aside class="rant-aside">
+    <div style="background-image: url(http://www.gravatar.com/avatar/undefined?s=200)" class="user-photo">
+    </div>
+  </aside>
+  <section class="rant-content">
+    <p>{{rant.body}}</p>
+  </section>
+</div>
