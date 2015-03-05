@@ -1,5 +1,17 @@
-<p>This is the partial for Users.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<main id="scroll">
+  <div ng-repeat="user in users">
+    <a href="#/users/{{user.id}}">
+      <div class="user">
+        <div style="background-image: url(http://www.gravatar.com/avatar/{{user.email.trim()}})" class="user-photo">
+        </div>
+        <h5>
+          {{user.first_name}}
+          {{user.last_name}}
+        </h5>
+        <h6>
+          {{user.email}}
+        </h6>
+      </div>
+    </a>
+  </div>
+</main>
