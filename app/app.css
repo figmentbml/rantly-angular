@@ -28,6 +28,19 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.72222;
+  color: #34495E;
+  border: 2px solid #ECF0F1;
+  border-radius: 3px;
+  font: inherit;
+}
+
 .wrapper {
   padding-left: 15px;
   clear: both;
@@ -59,6 +72,11 @@ header a {
   line-height: 23px;
 }
 
+header > a.new-button {
+  float: right;
+  padding: 0;
+}
+
 aside, section {
   display: inline-block;
 }
@@ -80,7 +98,6 @@ section {
 }
 
 .button {
-  display: inline-block;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
@@ -89,6 +106,10 @@ section {
   border: 1px solid;
   border-radius: 3px;
   background: #1ABC9C;
+}
+
+a.button {
+  display: inline-block;
 }
 
 .button-invert {
@@ -108,12 +129,6 @@ section {
   overflow: hidden;
 }
 
-.rant-header {
-  margin-bottom: 15px;
-  color: #34495E;
-  clear: both;
-}
-
 .rant-title {
   width: 80%;
   float: left;
@@ -125,10 +140,6 @@ section {
 
 .rant-content {
   padding-left: 20px;
-}
-
-header > button {
-  float: right;
 }
 
 header > h3 {
@@ -206,4 +217,51 @@ a > div.user > h6 {
 
 section.full-width {
   width: 100%;
+}
+
+.rant-form {
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+  border-radius: 3px;
+  clear: both;
+  overflow: hidden;
+}
+
+.rant-header {
+  margin-bottom: 15px;
+  color: #34495E;
+  clear: both;
+  overflow: hidden;
+}
+
+.rant-header input {
+  font-family: Laila,serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #34495E;
+  border: none;
+  border-bottom: 2px solid #ECF0F1;
+  border-radius: 0;
+  padding: 0;
+  font-size: 29px;
+  width: 100%;
+}
+
+.rant-header-title {
+  float: left;
+  width: 60%;
+  border: none;
+}
+
+.rant-header-title>input:focus {
+  outline: none;
+  border-bottom: 1px solid #1ABC9C;
+}
+
+.rant-content>textarea:focus {
+  outline: none;
+  border: 1px solid #1ABC9C;
 }

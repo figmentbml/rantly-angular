@@ -1,0 +1,24 @@
+
+<form class="rant-form" name="newRant" ng-submit="createRant()">
+  <header class="rant-header">
+    <div class="rant-header-title">
+      <input type="text" ng-model="title" placeholder="Rant Title" autofocus="true"></input>
+    </div>
+    <div class="rant-action">
+      <button class="button" type="submit">
+        <span class="icon-upload">Save</span>
+      </button>
+      <button class="button button-default">
+        <span class="icon-exit">Cancel</span>
+      </button>
+    </div>
+  </header>
+  <aside>
+      <div style="background-image: url(http://www.gravatar.com/avatar/{{rant.user.email.trim()}})" class="user-photo">
+      </div>
+      0 Characters
+  </aside>
+  <section class="rant-content">
+      <textarea ng-model="body" placeholder="Start your rant." rows="13"></textarea>
+  </section>
+</form>
