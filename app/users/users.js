@@ -11,11 +11,7 @@ users.config(['$routeProvider', function($routeProvider) {
   when('/users/:userId', {
     templateUrl: 'users/user.html',
     controller: 'UsersDetailCtrl'
-  }).
-  when('/signup', {
-    templateURL: 'users/signup.html',
-    controller: 'SignUpCtrl'
-  });
+  })
 }]);
 
 users.controller('UsersCtrl', ['$scope', '$http', function($scope, $http) {
@@ -29,9 +25,4 @@ function($scope, $routeParams, $http) {
   $http.get('http://localhost:3000/users/' + $routeParams.userId).success(function(data) {
     $scope.user = data.user;
   });
-}]);
-
-
-users.controller('SignUpCtrl', [function() {
-
 }]);

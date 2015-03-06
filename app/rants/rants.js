@@ -4,11 +4,11 @@ var rants = angular.module('rantly.rants', ['ngRoute']);
 
 rants.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-  when('/rants', {
+  when('/', {
     templateUrl: 'rants/rants.html',
     controller: 'RantsCtrl'
   }).
-  when('/rants/new', {
+  when('/new', {
     templateUrl: 'rants/new.html',
     controller: 'NewRantCtrl'
   });
