@@ -9,5 +9,5 @@ angular.module('rantly', [
   'rantly.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/rants'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
